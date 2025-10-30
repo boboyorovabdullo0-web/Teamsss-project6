@@ -9,6 +9,7 @@
       "Courier New", monospace;
     --color-amber-50: oklch(98.7% 0.022 95.277);
     --color-green-400: oklch(79.2% 0.209 151.711);
+    --color-blue-100: oklch(93.2% 0.032 255.585);
     --color-blue-200: oklch(88.2% 0.059 254.128);
     --color-blue-400: oklch(70.7% 0.165 254.624);
     --color-blue-500: oklch(62.3% 0.214 259.815);
@@ -309,6 +310,9 @@
   .w-\[208px\] {
     width: 208px;
   }
+  .w-\[272px\] {
+    width: 272px;
+  }
   .w-\[276px\] {
     width: 276px;
   }
@@ -329,6 +333,9 @@
   }
   .resize {
     resize: both;
+  }
+  .flex-col {
+    flex-direction: column;
   }
   .flex-wrap {
     flex-wrap: wrap;
@@ -402,6 +409,9 @@
   }
   .bg-\[\#F0F6F9\] {
     background-color: #F0F6F9;
+  }
+  .bg-blue-100 {
+    background-color: var(--color-blue-100);
   }
   .bg-blue-200 {
     background-color: var(--color-blue-200);
@@ -509,6 +519,9 @@
   .opacity-\[0\.9\] {
     opacity: 0.9;
   }
+  .opacity-\[0\.\] {
+    opacity: 0.;
+  }
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
@@ -525,6 +538,16 @@
       @media (hover: hover) {
         text-decoration-line: underline;
       }
+    }
+  }
+  .xs\:mb-\[100px\] {
+    @media (width >= 400px) {
+      margin-bottom: 100px;
+    }
+  }
+  .xs\:mb-\[200px\] {
+    @media (width >= 400px) {
+      margin-bottom: 200px;
     }
   }
   .xs\:block {
@@ -547,6 +570,11 @@
       height: 600px;
     }
   }
+  .xs\:h-\[700px\] {
+    @media (width >= 400px) {
+      height: 700px;
+    }
+  }
   .xs\:h-\[800px\] {
     @media (width >= 400px) {
       height: 800px;
@@ -557,6 +585,11 @@
       height: 900px;
     }
   }
+  .xs\:h-\[1000px\] {
+    @media (width >= 400px) {
+      height: 1000px;
+    }
+  }
   .xs\:h-\[1200px\] {
     @media (width >= 400px) {
       height: 1200px;
@@ -565,6 +598,11 @@
   .xs\:w-\[380px\] {
     @media (width >= 400px) {
       width: 380px;
+    }
+  }
+  .xs\:flex-row {
+    @media (width >= 400px) {
+      flex-direction: row;
     }
   }
   .xs\:flex-wrap {
@@ -607,6 +645,11 @@
       display: none;
     }
   }
+  .xl\:h-\[300px\] {
+    @media (width >= 800px) {
+      height: 300px;
+    }
+  }
   .xl\:h-\[425px\] {
     @media (width >= 800px) {
       height: 425px;
@@ -620,6 +663,16 @@
   .xl\:w-\[753px\] {
     @media (width >= 800px) {
       width: 753px;
+    }
+  }
+  .xl\:flex-col {
+    @media (width >= 800px) {
+      flex-direction: column;
+    }
+  }
+  .xl\:flex-row {
+    @media (width >= 800px) {
+      flex-direction: row;
     }
   }
   .xl\:flex-nowrap {
